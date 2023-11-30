@@ -1,0 +1,36 @@
+# $ variables
+
+$any=ATGC
+
+# ! individual DNA strands
+
+!s1→  (s1.D1,10,[$any]) (hinge1,1,A) (s1.E,20,[$any]) (hinge2,1,A) (s1.C1,10,[$any]) (s1.C2,10,[$any]) (hinge3,1,A) (s1.D2,10,[$any])
+!s2→  (s2.A1,10,[$any]) (hinge1,1,A) (s2.E,20,[$any]) (hinge2,1,A) (s2.F1,10,[$any]) (s2.F2,10,[$any]) (hinge3,1,A) (s2.A2,10,[$any])
+!s3→  (s3.F1,10,[$any]) (hinge1,1,A) (s3.D1,10,[$any]) (s3.D2,10,[$any]) (hinge2,1,A) (s3.B,20,[$any]) (hinge3,1,A) (s3.F2,10,[$any])
+!s4→  (s4.C1,10,[$any]) (hinge1,1,A) (s4.B,20,[$any]) (hinge2,1,A) (s4.A1,10,[$any]) (s4.A2,10,[$any]) (hinge3,1,A) (s4.C2,10,[$any])
+
+# ? interactions between DNA strands
+
+?s1.D1,s3.D1
+?s1.E,s2.E
+?s1.C1,s4.C2
+?s1.C2,s4.C1
+?s1.D2,s3.D2
+
+?s2.A1,s4.A2
+?s2.E,s1.E
+?s2.F1,s3.F1
+?s2.F2,s3.F2
+?s2.A2,s4.A1
+
+?s3.F1,s2.F1
+?s3.D1,s1.D1
+?s3.D2,s1.D2
+?s3.B,s4.B
+?s3.F2,s2.F2
+
+?s4.C1,s1.C2
+?s4.B,s3.B
+?s4.A1,s2.A2
+?s4.A2,s2.A1
+?s4.C2,s1.C1

@@ -1,0 +1,21 @@
+# $ variables
+
+$GCrich=GCGCGCAT
+$any=ATGC
+
+# ! individual DNA strands
+
+!A→(γ.A,5,$any) (hingeA,1,A)  (α.A,5,$any)
+!B→(α.B,5,$any) (hingeB,1,A)  (β.B,5,$any)
+!C→(β.C,5,$any) (hingeC,1,A)  (γ.C,5,$any)
+
+
+# ? connections
+?α.A,α.B
+?α.B,α.A
+
+?β.B,β.C
+?β.C,β.B
+
+?γ.C,γ.A
+?γ.A,γ.C
