@@ -1,5 +1,4 @@
-# Arktos: a tool for designing simple DNA polyhedra
-
+# Arktos: a simple tool for the design of polyhedral DNA nanostructures
 
 Copyright (C) 2023 Deepesh Nagarajan (1337deepesh@gmail.com)
 
