@@ -114,7 +114,6 @@ The full output format described her can be found in benchmarking_graph.OP.txt
 #ArkScore: Arktos score of the designed polyhedron. Lower scores are preferable. Scores can never be negative.
 
 > \>s1
->
 > |ATCTCATTAC|A|GCTGTCTTCACCTGGAGGTG|A|TTGTGGCTCC|AGGGGTAGCC|A|GTTCCGCCGG|
 
 Strands are outputted in the .fasta format. '|' breaks denote different complementary regions (nodes) within a strand. '|' can be removed via a simple pipe:
