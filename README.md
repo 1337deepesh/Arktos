@@ -13,14 +13,14 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 See the GNU General Public License <http://www.gnu.org/licenses/>
 for more details.
 
-# Usage
+## Usage
 
 python3 arktos.py <X_graph.txt>
 Expect 'X_graph.OP.txt' as the output
 
 There are no dependencies. The script should run out of the box.
 
-# Concept
+## Concept
 
 Arktos attempts to design simple DNA polyhedra using positive and negative design. The user inputs the DNA polyhedra they intend to design as a graph (format described later). This format represents individual single stranded complementary regions as nodes. ssDNA-ssDNA interactions that form dsDNA are represented as edges, or connections.
 
@@ -40,7 +40,7 @@ The ArkScore will be zero or positive. By design, it can never be negative. A si
 
 Designed sequences are outputted in the fasta format, but with '|' breaks between different complementary regions (nodes) within a strand.
 
-# Input
+## Input
 
 The full input format described her can be found in benchmarking_graph.txt
 
@@ -70,7 +70,7 @@ There are three strands: A, B, and C. Each strand has 11 residues.
 
 There is also a single unpaired residue on every strand that is neccessary to allow the strand to turn.
 
-## Input rules:
+### Input rules:
 
 The input format for strand A is described below. The input format for strands B and C will follow the same rules.
 
@@ -86,7 +86,7 @@ The input format for strand A is described below. The input format for strands B
 
 Likewise, (hingeA,1,A) represents a single residue adenine hinge, and (α.A,5,$any) represents another complementary region (node).
 
-## Sequence design rules:
+### Sequence design rules:
 
 Every complementary region (node) need a set of sequences constraints before design.
 
@@ -94,7 +94,7 @@ Every complementary region (node) need a set of sequences constraints before des
 - (node_name, len, GCGCGCAT): Used to design GC rich regions. The frequency of every letter within the string denotes the frequency it will be sampled at during design. For G occurs 3 times. C occurs 3 times. G+C = 6, string length = 8. 6/8*100 = GC sampling at 75% frequency
 - $GCrich=GCGCGCAT: $ denotes a variable that can be used in place of a sequence. (node_name, len, GCGCGCAT) becomes (node_name, len, $GCrich)
 
-## Complementary region (node) pairing rules:
+### Complementary region (node) pairing rules:
 
 ?γ.A,γ.C
 
