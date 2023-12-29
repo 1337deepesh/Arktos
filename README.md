@@ -31,7 +31,7 @@ Negative design ensures that off-target matches that arise by chance in unpaired
 
 Let UM = mismatch (length >=4) in unpaired strands.
 
-ArkScore = Σ1/N+NC2 (UM)^2
+ArkScore = Σ(1)(N+NC2) (UM)^2
 
 For a system of N strands, there are N+NC2 total strand pairings (including self pairings at off-target regions). A summation of the squares of all off-target matches of sequence lengths >= 4 across all N+NC2 strands is the ArkScore. A sequence length of >=4 was chosen as the minimum threshold for a mismatch since  mismatch lengths <= 3 only transiently bind and will not affect the foldability of our designed polyhedron. A square term is added to disproportionately penalize off-target matches of greater lengths.
 
