@@ -27,7 +27,7 @@ Once an input is read, Arktos attempts to design a DNA sequence that is expected
 
 Positive design involves trying to design on-target matches (base-pair complementarity) for every matching strand. This step is trivial.
 
-Negative design ensures that off-target matches that arise by chance in unpaired strands are elmininated. Arktos does this using a simple scoring function:
+Negative design ensures that off-target matches that arise by chance in unpaired strands are elimininated. Arktos does this using a simple scoring function:
 
 Let UM = mismatch (length >=4) in unpaired strands.
 
