@@ -121,3 +121,7 @@ Strands are outputted in the .fasta format. '|' breaks denote different compleme
 cat benchmarking_graph.OP.fasta |tr -d '|'
 
 These sequences can now be used for primer synthesis and experimental validation.
+
+Note that the outputted ArkScore is not normalized. The end-user must divide ArkScore by the number of inputted nucleotides to get ArkScore/nucleotide. When comparing designed DNA nanostructures at different orders of magnitude of size, the end-user must normalize ArkScore to ArkScore_OM using this formula: 
+
+ArkScore_OM = ArkScore/nucleotides^2 * 100
